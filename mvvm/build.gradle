@@ -12,7 +12,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.shangzuo.mvvm'
                 artifactId = 'mvvm'
-                version = '1.0.0'
+                version = '1.0.3'
             }
 //            debug(MavenPublication) {
 //                from components.debug
@@ -55,6 +55,12 @@ android {
 }
 
 dependencies {
+
+    def rxhttp_version = '3.2.2'
+    implementation 'com.squareup.okhttp3:okhttp:4.11.0'
+    implementation "com.github.liujingxing.rxhttp:rxhttp:$rxhttp_version"
+    kapt "com.github.liujingxing.rxhttp:rxhttp-compiler:$rxhttp_version"
+    implementation 'com.blankj:utilcodex:1.31.1'
 
     implementation 'androidx.core:core-ktx:1.8.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'

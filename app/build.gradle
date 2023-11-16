@@ -36,22 +36,9 @@ android {
     }
 
 }
-configurations.all {
-    resolutionStrategy {
-        force 'org.jetbrains.kotlin:kotlin-stdlib-common:1.9.0'
-    }
-}
 
 dependencies {
     implementation project(path: ':mvvm')
-
-    def rxhttp_version = '3.2.2'
-    implementation 'com.squareup.okhttp3:okhttp:4.11.0'
-    implementation "com.github.liujingxing.rxhttp:rxhttp:$rxhttp_version"
-    kapt "com.github.liujingxing.rxhttp:rxhttp-compiler:$rxhttp_version"
-    implementation 'com.blankj:utilcodex:1.31.1'
-
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.0"
 
     implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
