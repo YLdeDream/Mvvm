@@ -14,7 +14,6 @@ class MainActivity : AppCompatActivity() {
        // AppUtils.getAppVersionName()
         AppUtils.getAppVersionName()
 
-
         BaseUtils.getTest()
     }
 }
