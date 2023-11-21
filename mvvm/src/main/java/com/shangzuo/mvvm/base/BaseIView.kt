@@ -60,7 +60,7 @@ interface BaseIView {
     fun onRequestError(loadStatus: LoadStatusEntity)
 
     /**
-     * 请求数据为空时 在 ResponseParser 中判断了如果是列表数据，是第一页，且没有数据时 回调这个方法
+     * 请求数据为空时 在  中判断了如果是列表数据，是第一页，且没有数据时 回调这个方法
      * @param loadStatus LoadStatusEntity
      */
     fun onRequestEmpty(loadStatus: LoadStatusEntity)

@@ -12,7 +12,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.YLdeDream'
                 artifactId = 'Mvvm'
-                version = '1.0.6'
+                version = '1.1.0'
             }
         }
     }
@@ -53,11 +53,8 @@ android {
 }
 
 dependencies {
-
-    def rxhttp_version = '3.2.2'
     api 'com.squareup.okhttp3:okhttp:4.11.0'
-    api "com.github.liujingxing.rxhttp:rxhttp:$rxhttp_version"
-    kapt "com.github.liujingxing.rxhttp:rxhttp-compiler:$rxhttp_version"
+    api "com.github.liujingxing.rxhttp:rxhttp:3.2.2"
     api 'com.blankj:utilcodex:1.31.1'
     //material-dialog
     implementation "com.afollestad.material-dialogs:core:3.3.0"
