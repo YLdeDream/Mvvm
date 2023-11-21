@@ -7,6 +7,7 @@ import okio.IOException
 
 class HeadInterceptor : Interceptor {
 
+
     @Throws(IOException::class)
     override fun intercept(chain: Interceptor.Chain): Response {
         val builder = chain.request().newBuilder()
