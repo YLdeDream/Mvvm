@@ -13,7 +13,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
        // AppUtils.getAppVersionName()
 
-
         AppUtils.getAppVersionName()
 
         BaseUtils.getTest()
